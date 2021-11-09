@@ -14,7 +14,7 @@ state = {
 
 componentDidMount = () => {
   this.getBlogPost();
-}
+};
 
 getBlogPost = () => {
   axios.get('/api')
@@ -61,7 +61,7 @@ getBlogPost = () => {
     this.setState({
       title: '',
       body: ''
-    })
+    });
   };
 
   displayBlogPost = (posts) => {
